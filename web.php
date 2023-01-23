@@ -35,5 +35,6 @@ Route::controller(AAAController::class)->group(function() {
 
 use App\Http\Controllers\Admin\ProfileController;
 Route::controller(ProfileController::class)->group(function() {
-    Route::get('admin/profile/create', 'edit');
+    Route::get('admin/profile/create', 'add');
+    Route::get('admin/profile/edit', 'edit');
 });
